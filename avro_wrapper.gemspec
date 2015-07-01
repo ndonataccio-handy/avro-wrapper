@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.description = ""
   s.authors     = ["Razvan Popa"]
   s.email       = 'razvan@itnovate.ro'
-  s.files       = ["lib/avro_event.rb"]
+  s.files       = ["lib/avro_wrapper.rb"]
   s.homepage    =
-    'http://rubygems.org/gems/avro_wrapper'
+    'https://github.com/razvan-/avro-wrapper'
   s.license       = 'MIT'
 end
