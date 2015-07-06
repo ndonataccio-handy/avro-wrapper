@@ -1,9 +1,16 @@
+PATH
+  remote: .
+  specs:
+    avro-wrapper (0.0.1)
+      avro (>= 1.7.7)
+
 GEM
+  remote: https://rubygems.org/
   specs:
     avro (1.7.7)
       multi_json
     diff-lcs (1.2.5)
-    multi_json (1.11.0)
+    multi_json (1.11.2)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
@@ -22,5 +29,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  avro
-  rspec
+  avro-wrapper!
+  rspec (>= 3.2.0)

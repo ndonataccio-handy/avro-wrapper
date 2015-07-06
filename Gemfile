@@ -1,2 +1,3 @@
-gem 'avro'
-gem 'rspec'
+source 'https://rubygems.org'
+
+gemspec
