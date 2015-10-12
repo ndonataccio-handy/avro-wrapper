@@ -15,7 +15,7 @@ class AvroWrapper
 
   def to_h
     Hash[instance_variables.map do |k|
-      [k.to_s.gsub(/^@/,""),eval(k.to_s)]
+      [k.to_s.gsub(/^@/,""),instance_variable_get(k.to_s)]
     end]
   end
 
@@ -34,6 +34,6 @@ class AvroWrapper
     decoder = Avro::IO::BinaryDecoder.new(raw_data)
     datum_reader = Avro::IO::DatumReader.new(schema)
     object_hash = datum_reader.read(decoder)
-    eval "#{self}.new(#{object_hash})"
+    self.new(object_hash)
   end
 end
